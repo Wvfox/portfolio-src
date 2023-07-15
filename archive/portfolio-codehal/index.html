@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- https://boxicons.com/ -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./style.css" />
+		<title>Personal Portfolio</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="./index.html" class="header__logo">Portfolio</a>
+
+			<div class="header__menu menu">
+				<div class="menu__icon">
+					<span></span>
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li>
+							<a href="#" data-goto="home" class="menu__link">Home</a>
+						</li>
+						<li>
+							<a href="#" data-goto="about" class="menu__link">About</a>
+						</li>
+						<li>
+							<a href="#" data-goto="services" class="menu__link">Services</a>
+						</li>
+						<li>
+							<a href="#" data-goto="portfolio" class="menu__link">Portfolio</a>
+						</li>
+						<li>
+							<a href="#" data-goto="contact" class="menu__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="page-section home" id="home">
+			<div class="home__content">
+				<h2 class="home__title">Hello, It's Me</h2>
+				<h1 class="home__name">Web-developer</h1>
+				<h2 class="home__title">
+					And i'm a <span class="multiple-text"></span>
+				</h2>
+				<div class="home__description">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae,
+						hic similique! Cupiditate, ipsam odit. Quasi, dolor non. Eius,
+						tempore similique magnam quae esse aliquid quos laboriosam
+						dignissimos incidunt illo temporibus.
+					</p>
+				</div>
+				<div class="home__social social-media">
+					<a href="" class="social-media__link"
+						><i class="bx bxl-facebook"></i
+					></a>
+					<a href="" class="social-media__link"
+						><i class="bx bxl-twitter"></i
+					></a>
+					<a href="" class="social-media__link"
+						><i class="bx bxl-instagram"></i
+					></a>
+					<a href="" class="social-media__link"
+						><i class="bx bxl-telegram"></i
+					></a>
+				</div>
+				<a href="#" class="btn">Download CV</a>
+			</div>
+
+			<div class="home__image">
+				<img src="./avatar.png" alt="home-image" />
+			</div>
+		</section>
+
+		<section class="page-section about" id="about">
+			<div class="about__image">
+				<img src="./avatar.png" alt="about-image" />
+			</div>
+			<div class="about__content">
+				<h2 class="page-section__title about__title">About <span>Me</span></h2>
+				<h3 class="about__sub-title">Frontend Developer</h3>
+				<div class="about__description">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa
+						excepturi aliquid recusandae qui, itaque hic dolor! Explicabo
+						molestiae fugit repellendus alias deserunt libero quod accusantium?
+						Omnis nostrum inventore, odio hic cum laudantium ad atque ex maiores
+						veniam cumque ipsum.
+					</p>
+				</div>
+				<a href="" class="btn">Read More</a>
+			</div>
+		</section>
+
+		<section class="page-section services" id="services">
+			<h2 class="page-section__title services__title">
+				Our <span>Services</span>
+			</h2>
+			<div class="services__items">
+				<div class="services__item">
+					<i class="bx bx-code-alt"></i>
+					<h3 class="services__sub-title">Web Development</h3>
+					<p class="services__description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde modi
+						perferendis rerum molestias ad est reiciendis amet dolorum ex
+						quaerat deserunt, labore consequuntur illum, ratione perspiciatis at
+						temporibus voluptate harum? Quibusdam placeat veniam aliquam magnam
+						provident voluptatibus dolores fugit reprehenderit?
+					</p>
+					<a href="" class="btn">Read More</a>
+				</div>
+				<div class="services__item">
+					<i class="bx bxs-paint"></i>
+					<h3 class="services__sub-title">Graphic Design</h3>
+					<p class="services__description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde modi
+						perferendis rerum molestias ad est reiciendis amet dolorum ex
+						quaerat deserunt, labore consequuntur illum, ratione perspiciatis at
+						temporibus voluptate harum? Quibusdam placeat veniam aliquam magnam
+						provident voluptatibus dolores fugit reprehenderit?
+					</p>
+					<a href="" class="btn">Read More</a>
+				</div>
+				<div class="services__item">
+					<i class="bx bx-bar-chart-alt"></i>
+					<h3 class="services__sub-title">Digital Marketing</h3>
+					<p class="services__description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde modi
+						perferendis rerum molestias ad est reiciendis amet dolorum ex
+						quaerat deserunt, labore consequuntur illum, ratione perspiciatis at
+						temporibus voluptate harum? Quibusdam placeat veniam aliquam magnam
+						provident voluptatibus dolores fugit reprehenderit?
+					</p>
+					<a href="" class="btn">Read More</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section portfolio" id="portfolio">
+			<h2 class="page-section__title portfolio__title">
+				Latest <span>Project</span>
+			</h2>
+			<div class="portfolio__items">
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="./image.jpg" alt="portfolio-image-01" />
+					</div>
+					<div class="portfolio__layer">
+						<h4 class="portfolio__sub-title">Web Design</h4>
+						<p class="portfolio__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque laboriosam tempore commodi pariatur a deleniti!
+						</p>
+						<a href="#" class="portfolio__link"
+							><i class="bx bx-link-external"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section contact" id="contact">
+			<h2 class="page-section__title contact__title">
+				Contact <span>Me!</span>
+			</h2>
+			<form action="#" class="contact__form form-contact">
+				<div class="form-contact__item">
+					<input type="text" placeholder="Full Name" />
+					<input type="email" placeholder="Email Address" />
+				</div>
+				<div class="form-contact__item">
+					<input type="tel" placeholder="Mobile Number" />
+					<input type="text" placeholder="Email Subject" />
+				</div>
+				<textarea
+					name=""
+					id=""
+					cols="30"
+					rows="10"
+					class="form-contact__textarea"
+					placeholder="Your message"
+				></textarea>
+				<button type="submit" class="btn">Send Meassage</button>
+			</form>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__content">
+				<p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
+			</div>
+			<div class="footer__icon-top">
+				<a href="#" class="footer__link">
+					<i class="bx bx-chevron-up"></i>
+				</a>
+			</div>
+		</footer>
+
+		<!-- https://github.com/mattboldt/typed.js/ -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

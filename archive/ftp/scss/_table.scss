@@ -1,0 +1,187 @@
+.table {
+	@include shadow(0.5);
+	width: 100%;
+	text-align: center;
+	border: 1px solid $border_table_color;
+	border-radius: 20px;
+
+	&__row {
+		width: 100%;
+		display: flex;
+		border: 2px solid $border_table_color;
+		transition: border 0.2s ease-in;
+		&:first-child {
+			border-radius: 20px 20px 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 20px 20px;
+		}
+		&:nth-child(2n + 3) {
+			color: $color-table-even;
+			background-color: $background_table_even;
+			button {
+				color: $color-table-even;
+			}
+		}
+		&:nth-child(2n) {
+			color: $accent;
+			background-color: $background_table_odd;
+			button {
+				color: $accent;
+			}
+		}
+		&_heading {
+			font-style: italic;
+			color: $light_gray;
+			background-color: $background_table_even;
+		}
+		&:hover {
+			border: 2px solid rgba($select, 0.4);
+		}
+	}
+
+	&__column {
+		padding: 15px 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $border_table_color;
+		border-bottom: none;
+		border-top: none;
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+
+	&_five {
+		.table__column {
+			&:first-child,
+			&:last-child {
+				width: 15%;
+				padding: 0;
+				button {
+					@include select;
+					width: 100%;
+					height: 100%;
+					font-size: 24px;
+				}
+			}
+			&:nth-child(2) {
+				width: 10%;
+				font-size: 20px;
+			}
+			&:nth-child(3) {
+				width: 35%;
+			}
+			&:nth-child(4) {
+				width: 25%;
+			}
+		}
+	}
+	&_four {
+		.table__column {
+			&:first-child {
+				width: 15%;
+				font-size: 20px;
+			}
+			&:nth-child(2) {
+				width: 45%;
+			}
+			&:nth-child(3) {
+				width: 30%;
+			}
+			&:last-child {
+				width: 20%;
+				button {
+					@include select;
+					width: 100%;
+					height: 100%;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	&_three {
+		.table__column {
+			&:first-child {
+				width: 15%;
+				font-size: 20px;
+			}
+			&:nth-child(2) {
+				width: 55%;
+			}
+			&:last-child {
+				width: 30%;
+			}
+		}
+	}
+}
+
+.custom-create {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&__btn {
+		@include btn();
+		padding: 10px;
+		margin: 30px 0 10px;
+	}
+	&__form-title {
+		margin: 0 0 35px;
+		color: $accent;
+		font-style: italic;
+		text-align: center;
+		font-size: 26px;
+	}
+	&__form {
+		padding: 20px;
+		margin: 30px 0 0;
+		width: 100%;
+		border: 2px solid $hard_dark_accent;
+		border-radius: 30px;
+		background-color: $background_table_even;
+
+		.form {
+			&__label {
+				@include label;
+				width: 100%;
+				flex-direction: row;
+				align-items: center;
+				&:not(:last-child) {
+					margin: 0 0 15px 0;
+				}
+				@media (max-width: 500px) {
+					flex-direction: column;
+					align-items: start;
+					&:not(:last-child) {
+						margin: 0 0 25px 0;
+					}
+				}
+			}
+			&__title {
+				text-align: start;
+				margin: 0 20px 0 0;
+				width: 30%;
+				@media (max-width: 500px) {
+					width: auto;
+				}
+			}
+			&__input {
+				@include input;
+				padding: 10px 7px 7px;
+			}
+			&__submit {
+				@include btn();
+				padding: 10px 20px;
+				margin: 30px 0 0;
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}

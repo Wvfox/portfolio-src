@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230630052401" />
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230630052401"
+	/>
+	<title>Metaverse</title>
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header"><div class="header__container">
+	<div class="header__head">
+		<a data-anchor=".header" href="Home" class="header__logo logo">
+			<img src="./img/logo.svg" alt="Logo" />
+		</a>
+		<div class="menu">
+			<div class="menu__icon">
+				<span></span>
+			</div>
+			<nav class="header__nav menu__body">
+				<a data-anchor=".explore" href="Explore" class="header__nav-item"
+					>Explore</a
+				>
+				<a data-anchor=".utility" href="Utility" class="header__nav-item"
+					>Utility</a
+				>
+				<a data-anchor=".development" href="Roadmap" class="header__nav-item"
+					>Roadmap</a
+				>
+				<a data-anchor=".team" href="Team" class="header__nav-item">Team</a>
+				<a data-anchor=".faq" href="FAQ" class="header__nav-item">FAQ</a>
+				<a data-anchor=".catalog" href="Features" class="header__nav-item"
+					>Features</a
+				>
+				<a data-anchor=".partner" href="Whitepaper" class="header__nav-item"
+					>Whitepaper</a
+				>
+				<div class="header__menu-social">
+					<a href="#" class="header__icon"
+						><svg
+							width="32"
+							height="27"
+							viewBox="0 0 32 27"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10.1157 26.4999C22.0854 26.4999 28.6312 16.498 28.6312 7.82472C28.6312 7.54066 28.6255 7.25789 28.6128 6.9763C29.8864 6.04682 30.9856 4.8959 31.8589 3.5775C30.6929 4.10031 29.4381 4.45221 28.1219 4.61088C29.4654 3.79821 30.4968 2.51287 30.9835 0.980513C29.706 1.7449 28.3085 2.28371 26.8512 2.57374C25.6637 1.29796 23.9732 0.5 22.1011 0.5C18.5074 0.5 15.5932 3.43944 15.5932 7.06272C15.5932 7.5778 15.6503 8.07882 15.762 8.55933C10.3535 8.28483 5.55757 5.67303 2.34789 1.70161C1.76981 2.7032 1.46572 3.84163 1.46671 5.00057C1.46671 7.27775 2.61558 9.28805 4.36261 10.4641C3.32923 10.4323 2.31851 10.1508 1.41541 9.64317C1.41445 9.67076 1.41445 9.6976 1.41445 9.72701C1.41445 12.9057 3.65758 15.5597 6.63523 16.1611C6.07598 16.3148 5.4989 16.3925 4.91927 16.3922C4.50879 16.3919 4.09926 16.3522 3.69622 16.2737C4.52471 18.8817 6.92707 20.7795 9.7753 20.8325C7.54802 22.5933 4.74227 23.642 1.69288 23.642C1.16826 23.642 0.650026 23.612 0.140625 23.5512C3.02067 25.4132 6.44045 26.4996 10.116 26.4996"
+							/>
+						</svg>
+					</a>
+					<a href="#" class="header__icon"
+						><svg
+							width="26"
+							height="30"
+							viewBox="0 0 26 30"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10.4253 12.6387C9.61461 12.6387 8.97461 13.372 8.97461 14.2667C8.97461 15.1613 9.62883 15.8947 10.4253 15.8947C11.2359 15.8947 11.8759 15.1613 11.8759 14.2667C11.8902 13.372 11.2359 12.6387 10.4253 12.6387ZM15.6164 12.6387C14.8057 12.6387 14.1657 13.372 14.1657 14.2667C14.1657 15.1613 14.8199 15.8947 15.6164 15.8947C16.4271 15.8947 17.0671 15.1613 17.0671 14.2667C17.0671 13.372 16.4271 12.6387 15.6164 12.6387Z"
+							/>
+							<path
+								d="M22.529 0.333374H3.47122C1.86411 0.333374 0.555664 1.68271 0.555664 3.35471V23.184C0.555664 24.856 1.86411 26.2054 3.47122 26.2054H19.5992L18.8454 23.492L20.6659 25.2374L22.3868 26.88L25.4446 29.6667V3.35471C25.4446 1.68271 24.1361 0.333374 22.529 0.333374ZM17.0392 19.488C17.0392 19.488 16.5272 18.8574 16.1006 18.3C17.9637 17.7574 18.6748 16.5547 18.6748 16.5547C18.0917 16.9507 17.537 17.2294 17.0392 17.42C16.3281 17.728 15.6454 17.9334 14.977 18.0507C13.6117 18.3147 12.3601 18.2414 11.2934 18.036C10.4828 17.8747 9.78589 17.64 9.20278 17.4054C8.87566 17.2734 8.52011 17.112 8.16455 16.9067C8.12189 16.8774 8.07922 16.8627 8.03655 16.8334C8.00811 16.8187 7.99389 16.804 7.97966 16.7894C7.72366 16.6427 7.58144 16.54 7.58144 16.54C7.58144 16.54 8.26411 17.7134 10.0703 18.2707C9.64366 18.828 9.11744 19.488 9.11744 19.488C5.97433 19.3854 4.77966 17.2587 4.77966 17.2587C4.77966 12.536 6.82766 8.70804 6.82766 8.70804C8.87566 7.12404 10.8241 7.16804 10.8241 7.16804L10.9663 7.34404C8.40633 8.10671 7.22589 9.26538 7.22589 9.26538C7.22589 9.26538 7.53878 9.08938 8.065 8.84004C9.58677 8.15071 10.7957 7.96004 11.2934 7.91604C11.3788 7.90138 11.4499 7.88671 11.5352 7.88671C12.4028 7.76938 13.3841 7.74004 14.4081 7.85738C15.7592 8.01871 17.2099 8.42938 18.689 9.26538C18.689 9.26538 17.5654 8.16538 15.1477 7.40271L15.3468 7.16804C15.3468 7.16804 17.2952 7.12404 19.3432 8.70804C19.3432 8.70804 21.3912 12.536 21.3912 17.2587C21.3912 17.2587 20.1823 19.3854 17.0392 19.488Z"
+							/>
+						</svg>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<div class="header__other">
+			<div class="header__other-social">
+				<a href="#" class="header__icon"
+					><svg
+						width="32"
+						height="27"
+						viewBox="0 0 32 27"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.1157 26.4999C22.0854 26.4999 28.6312 16.498 28.6312 7.82472C28.6312 7.54066 28.6255 7.25789 28.6128 6.9763C29.8864 6.04682 30.9856 4.8959 31.8589 3.5775C30.6929 4.10031 29.4381 4.45221 28.1219 4.61088C29.4654 3.79821 30.4968 2.51287 30.9835 0.980513C29.706 1.7449 28.3085 2.28371 26.8512 2.57374C25.6637 1.29796 23.9732 0.5 22.1011 0.5C18.5074 0.5 15.5932 3.43944 15.5932 7.06272C15.5932 7.5778 15.6503 8.07882 15.762 8.55933C10.3535 8.28483 5.55757 5.67303 2.34789 1.70161C1.76981 2.7032 1.46572 3.84163 1.46671 5.00057C1.46671 7.27775 2.61558 9.28805 4.36261 10.4641C3.32923 10.4323 2.31851 10.1508 1.41541 9.64317C1.41445 9.67076 1.41445 9.6976 1.41445 9.72701C1.41445 12.9057 3.65758 15.5597 6.63523 16.1611C6.07598 16.3148 5.4989 16.3925 4.91927 16.3922C4.50879 16.3919 4.09926 16.3522 3.69622 16.2737C4.52471 18.8817 6.92707 20.7795 9.7753 20.8325C7.54802 22.5933 4.74227 23.642 1.69288 23.642C1.16826 23.642 0.650026 23.612 0.140625 23.5512C3.02067 25.4132 6.44045 26.4996 10.116 26.4996"
+						/>
+					</svg>
+				</a>
+				<a href="#" class="header__icon"
+					><svg
+						width="26"
+						height="30"
+						viewBox="0 0 26 30"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.4253 12.6387C9.61461 12.6387 8.97461 13.372 8.97461 14.2667C8.97461 15.1613 9.62883 15.8947 10.4253 15.8947C11.2359 15.8947 11.8759 15.1613 11.8759 14.2667C11.8902 13.372 11.2359 12.6387 10.4253 12.6387ZM15.6164 12.6387C14.8057 12.6387 14.1657 13.372 14.1657 14.2667C14.1657 15.1613 14.8199 15.8947 15.6164 15.8947C16.4271 15.8947 17.0671 15.1613 17.0671 14.2667C17.0671 13.372 16.4271 12.6387 15.6164 12.6387Z"
+						/>
+						<path
+							d="M22.529 0.333374H3.47122C1.86411 0.333374 0.555664 1.68271 0.555664 3.35471V23.184C0.555664 24.856 1.86411 26.2054 3.47122 26.2054H19.5992L18.8454 23.492L20.6659 25.2374L22.3868 26.88L25.4446 29.6667V3.35471C25.4446 1.68271 24.1361 0.333374 22.529 0.333374ZM17.0392 19.488C17.0392 19.488 16.5272 18.8574 16.1006 18.3C17.9637 17.7574 18.6748 16.5547 18.6748 16.5547C18.0917 16.9507 17.537 17.2294 17.0392 17.42C16.3281 17.728 15.6454 17.9334 14.977 18.0507C13.6117 18.3147 12.3601 18.2414 11.2934 18.036C10.4828 17.8747 9.78589 17.64 9.20278 17.4054C8.87566 17.2734 8.52011 17.112 8.16455 16.9067C8.12189 16.8774 8.07922 16.8627 8.03655 16.8334C8.00811 16.8187 7.99389 16.804 7.97966 16.7894C7.72366 16.6427 7.58144 16.54 7.58144 16.54C7.58144 16.54 8.26411 17.7134 10.0703 18.2707C9.64366 18.828 9.11744 19.488 9.11744 19.488C5.97433 19.3854 4.77966 17.2587 4.77966 17.2587C4.77966 12.536 6.82766 8.70804 6.82766 8.70804C8.87566 7.12404 10.8241 7.16804 10.8241 7.16804L10.9663 7.34404C8.40633 8.10671 7.22589 9.26538 7.22589 9.26538C7.22589 9.26538 7.53878 9.08938 8.065 8.84004C9.58677 8.15071 10.7957 7.96004 11.2934 7.91604C11.3788 7.90138 11.4499 7.88671 11.5352 7.88671C12.4028 7.76938 13.3841 7.74004 14.4081 7.85738C15.7592 8.01871 17.2099 8.42938 18.689 9.26538C18.689 9.26538 17.5654 8.16538 15.1477 7.40271L15.3468 7.16804C15.3468 7.16804 17.2952 7.12404 19.3432 8.70804C19.3432 8.70804 21.3912 12.536 21.3912 17.2587C21.3912 17.2587 20.1823 19.3854 17.0392 19.488Z"
+						/>
+					</svg>
+				</a>
+			</div>
+			<a href="#" class="header__button">buy now</a>
+		</div>
+	</div>
+	<div class="header__body">
+		<div class="header__title">
+			<img src="./img/logo.svg" alt="header-title" />
+		</div>
+		<div class="header__subtitle">
+			In a world where reality is never enough,
+			<span>We are the future.</span>
+		</div>
+	</div>
+	<div class="header__footer">
+		<ul class="header__brand-list">
+			<li class="header__brand-item">
+				<img src="./img/header/brand-1.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-2.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-3.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-4.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-5.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-1.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-2.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-3.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-4.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-5.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-1.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-2.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-3.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-4.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-5.svg" alt="" />
+			</li>
+			<li class="header__brand-item">
+				<img src="./img/header/brand-1.svg" alt="" />
+			</li>
+		</ul>
+	</div>
+</div>
+</header>
+
+			<section class="advantages advantages--shop">
+				<div class="advantages__container container">
+	<h2 class="advantages__title section__title">
+		Shop in the Metaverse for Real Products
+	</h2>
+	<p class="advantages__description">
+		RINE VR allows you to shop for real products from your favorite brands in
+		the comfort of your own metaverse space. Shop digital assets of artworks or
+		buy NFT tickets to join exclusive virtual events — it’s all possible now!
+	</p>
+	<div class="advantages__media">
+		<picture><source srcset="./img/advantages/shop-img.webp" type="image/webp"><img src="./img/advantages/shop-img.jpg" alt="" /></picture>
+	</div>
+</div>
+
+			</section>
+
+			<section class="create"><div class="create__container">
+	<h2 class="create__title section__title">Create Your Own Personal Space</h2>
+	<p class="create__description container">
+		Everyone needs a place to call their own. RINE VR allows you to create your
+		own personal space that can be customized with 3D spaces, furniture and
+		decorations exactly how you want it. It's like having your own little slice
+		of heaven in the metaverse!
+	</p>
+	<div class="create__media">
+		<picture><source srcset="./img/advantages/create-img.webp" type="image/webp"><img src="./img/advantages/create-img.jpg" alt="" /></picture>
+	</div>
+</div>
+</section>
+
+			<div class="decor"></div>
+
+			<section class="advantages advantages--suitable">
+				<div class="advantages__container container">
+	<h2 class="advantages__title section__title">
+		Shop in the Metaverse for Real Products
+	</h2>
+	<p class="advantages__description">
+		RINE VR allows you to shop for real products from your favorite brands in
+		the comfort of your own metaverse space. Shop digital assets of artworks or
+		buy NFT tickets to join exclusive virtual events — it’s all possible now!
+	</p>
+	<div class="advantages__media">
+		<picture><source srcset="./img/advantages/suitable-img.webp" type="image/webp"><img src="./img/advantages/suitable-img.jpg" alt="" /></picture>
+	</div>
+</div>
+
+			</section>
+
+			<section class="partner">
+				<h2 class="partner__title section__title">Partners</h2>
+<div class="swiper swiper--partner">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-1.png"
+				class="partner__logo"
+				height="79px"
+				alt=""
+			/>
+		</div>
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-2.png"
+				class="partner__logo"
+				height="65px"
+				alt=""
+			/>
+		</div>
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-3.png"
+				class="partner__logo"
+				height="65px"
+				alt=""
+			/>
+		</div>
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-4.png"
+				class="partner__logo"
+				height="65px"
+				alt=""
+			/>
+		</div>
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-5.png"
+				class="partner__logo"
+				height="65px"
+				alt=""
+			/>
+		</div>
+		<div class="swiper-slide partner__item">
+			<img
+				src="./img/partners/partners-6.png"
+				class="partner__logo"
+				height="65px"
+				alt=""
+			/>
+		</div>
+	</div>
+</div>
+
+			</section>
+
+			<section class="whitelist whitelist--orange">
+				<p class="whitelist__description">
+	In a world where reality is never enough,<br />
+	<span>We are the future.</span>
+</p>
+<button data-popup="#popup-whitelist" class="whitelist__button button">
+	Join the Whitelist
+</button>
+
+			</section>
+
+			<section class="advantages advantages--metaverse">
+				<div class="advantages__container container">
+	<h2 class="advantages__title section__title">
+		Shop in the Metaverse for Real Products
+	</h2>
+	<p class="advantages__description">
+		RINE VR allows you to shop for real products from your favorite brands in
+		the comfort of your own metaverse space. Shop digital assets of artworks or
+		buy NFT tickets to join exclusive virtual events — it’s all possible now!
+	</p>
+	<div class="advantages__media">
+		<picture><source srcset="./img/advantages/metaverse-img.webp" type="image/webp"><img src="./img/advantages/metaverse-img.jpg" alt="" /></picture>
+	</div>
+</div>
+
+			</section>
+
+			<div class="decor"></div>
+
+			<section class="explore">
+				<div class="explore__container container">
+	<h2 class="explore__title section__title">explore</h2>
+	<p class="explore__description section__description">
+		Reality Is Never Enough is a Virtual Reality platform accessible through
+		Oculus and via RINE VR App. It’s a parallel universe where you can join the
+		best NFT, design, fashion, jewellery, automotive and luxury properties
+		departments.
+	</p>
+	<div class="explore__arrow">
+		<img src="./img/icons/arrow-bottom.svg" alt="arrow-bottom" />
+	</div>
+	<button class="explore__media">
+		<picture><source srcset="./img/whitelist/explore-img.webp" type="image/webp"><img src="./img/whitelist/explore-img.jpg" alt="" /></picture>
+	</button>
+	<p class="explore__media-description">
+		Immerse yourself in a realistic 3D universe and explore new worlds, meet
+		people from around the globe, and participate in unforgettable experiences.
+		Browse and buy real products from your favourite brands, create your own
+		personal space, join exclusive virtual events, and enjoy a range of exciting
+		activities. Join us today and start exploring the metaverse like never
+		before!
+	</p>
+	<button data-popup="#popup-whitelist" class="explore__button button">
+		Join the Whitelist
+	</button>
+</div>
+
+			</section>
+
+			<section class="utility">
+				<h2 class="utility__title section__title">Utility</h2>
+<div class="utility__container">
+	<div class="utility__block">
+		<h3 class="utility__block-title">Metaverse Virtual Events & Experiences</h3>
+		<p class="utility__block-description">
+			Bring the real world into the metaverse and experience it like never
+			before. Host exclusive events, meet your favorite celebrities and explore
+			new worlds in the metaverse with RINE VR's events platform.
+		</p>
+	</div>
+	<div class="utility__media">
+		<picture><source srcset="./img/utility/utility-pc-vr.webp" type="image/webp"><img src="./img/utility/utility-pc-vr.png" alt="" /></picture>
+		<span>PC VR MODE</span>
+	</div>
+	<div class="utility__block">
+		<h3 class="utility__block-title">Realistic Virtual Experience</h3>
+		<p class="utility__block-description">
+			Feel like you're in a real space with our realistic virtual environment
+			that provides unparalleled immersion and connection. Our cutting-edge
+			technology offers realistic 3D visuals and audio for a one-of-a-kind
+			experience.
+		</p>
+	</div>
+</div>
+
+			</section>
+
+			<section class="pass"><div class="pass__container container">
+	<div class="pass__media">
+		<picture><source srcset="./img/utility/utility-pass.webp" type="image/webp"><img src="./img/utility/utility-pass.jpg" alt="" /></picture>
+	</div>
+	<div class="pass__content">
+		<h3 class="pass__title">Utility pass</h3>
+		<p class="pass__description">
+			RINE VR's NFT project, Platinum Membership, is an exciting opportunity to
+			support the platform's growth and development while gaining access to
+			exclusive benefits. With the purchase of this membership, you will gain
+			Platinum status, which provides free access to virtual and real events,
+			priority in purchasing virtual spaces, and maximum involvement in the
+			platform's news, updates and investment opportunities.
+		</p>
+	</div>
+</div>
+</section>
+
+			<section class="catalog">
+				<div class="catalog__head">
+	<button class="catalog__mode catalog__mode--active">
+		<svg
+			width="63"
+			height="23"
+			viewBox="0 0 63 23"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<rect width="19" height="23" />
+			<rect x="23" width="14" height="23" />
+			<rect x="41" width="8" height="23" />
+			<rect x="53" width="4" height="23" />
+			<rect x="61" width="2" height="23" />
+		</svg>
+		Vision
+	</button>
+	<button class="catalog__mode">
+		<svg
+			width="63"
+			height="23"
+			viewBox="0 0 63 23"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<rect width="19" height="23" />
+			<rect x="23" width="14" height="23" />
+			<rect x="41" width="8" height="23" />
+			<rect x="53" width="4" height="23" />
+			<rect x="61" width="2" height="23" />
+		</svg>
+		Perks
+	</button>
+</div>
+<div class="catalog__body">
+	<div class="catalog__content catalog__content--vision">
+		<p>
+			RINE VR is more than just a virtual reality platform - it's a community of
+			like-minded individuals who share a passion for innovation, creativity,
+			and exploration. Our vision is to create a metaverse that's not only
+			immersive and entertaining but also empowering and transformative.
+		</p>
+		<p>
+			Whether you're a business owner looking to expand your reach, an artist
+			seeking a new medium for expression, or simply someone looking to connect
+			with others, RINE VR provides the tools and resources you need to succeed.
+		</p>
+		<p>
+			At the core of our platform is the belief that the metaverse should be a
+			place of inclusivity, diversity, and openness. We're dedicated to
+			fostering an environment where all voices are heard, all ideas are
+			welcome, and all individuals are respected.
+		</p>
+		<p>
+			As a Platinum NFT member, you'll have the unique opportunity to be
+			involved in the design and development of future RINE spaces and features,
+			shaping the evolution of the metaverse. Join us in building a more
+			collaborative, more inclusive future for virtual reality. Join us in the
+			RINE metaverse and discover the limitless potential of virtual reality.
+			With our cutting-edge technology, creative community, and forward-thinking
+			approach, the possibilities are endless. So come on in, explore, and see
+			what the future of digital interaction looks like.
+		</p>
+		<div class="catalog__media">
+			<picture><source srcset="./img/utility/vision-bg.webp" type="image/webp"><img src="./img/utility/vision-bg.png" alt="" /></picture>
+		</div>
+	</div>
+
+	<div class="catalog__content catalog__content--perks">
+		<ul class="catalog__perks-list">
+			<li class="catalog__perks-item">
+				Access to exclusive virtual events featuring VIP guests and performers
+			</li>
+			<li class="catalog__perks-item">
+				Discounts on virtual real estate and other digital assets
+			</li>
+			<li class="catalog__perks-item">
+				Early access to new features and updates
+			</li>
+			<li class="catalog__perks-item">Priority customer support</li>
+			<li class="catalog__perks-item">
+				Access to premium virtual spaces for hosting events and meetings
+			</li>
+			<li class="catalog__perks-item">
+				Customizable personal spaces with 3D designs and decor options
+			</li>
+			<li class="catalog__perks-item">
+				Opportunities to collaborate on future RINE VR projects and features
+			</li>
+			<li class="catalog__perks-item">
+				Access to exclusive merchandise and virtual products from partner brands
+			</li>
+			<li class="catalog__perks-item">
+				Networking opportunities with like-minded individuals and industry
+				professionals
+			</li>
+			<li class="catalog__perks-item">
+				Access to educational resources and workshops for virtual reality
+				development and design.
+			</li>
+		</ul>
+		<p class="catalog__perks-description">
+			As a Platinum NFT member, you'll enjoy all of these perks and more,
+			including the ability to shape the future of the RINE metaverse through
+			your feedback and collaboration. Join our community today and experience
+			the full potential of virtual reality!
+		</p>
+		<div class="catalog__media">
+			<picture><source srcset="./img/utility/perks-bg.webp" type="image/webp"><img src="./img/utility/perks-bg.png" alt="" /></picture>
+		</div>
+	</div>
+</div>
+
+			</section>
+
+			<section class="development">
+				<div class="development__heading container">
+	<h2 class="development__title">Development roadmap</h2>
+	<p class="development__info">
+		Consolidating our application in accordance with the new meteverse
+		utilities, reinforcing the cloud environment and investing in the promotion
+		and marketing of NFTs for access to the RINE space.
+	</p>
+</div>
+<div class="swiper swiper--development">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-1.webp" type="image/webp"><img src="./img/development/development-1.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">01</span>
+			<h4 class="development__item-title">MULTIUSER</h4>
+			<p class="development__item-description">
+				Functionality to implement multi avatars presence is scene
+			</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-2.webp" type="image/webp"><img src="./img/development/development-2.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">02</span>
+			<h4 class="development__item-title">USER PROFILE</h4>
+			<p class="development__item-description">Personal profile</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-3.webp" type="image/webp"><img src="./img/development/development-3.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">03</span>
+			<h4 class="development__item-title">NFT MANAGEMENT</h4>
+			<p class="development__item-description">MetaMask integration</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-4.webp" type="image/webp"><img src="./img/development/development-4.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">04</span>
+			<h4 class="development__item-title">CUSTOMER CLOUD EVOLUTION</h4>
+			<p class="development__item-description">
+				Customers cloud database and admin panek
+			</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-5.webp" type="image/webp"><img src="./img/development/development-5.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">05</span>
+			<h4 class="development__item-title">10 STANDARD ENVIRONMENT</h4>
+			<p class="development__item-description">
+				10 ready to use 3D environment
+			</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-6.webp" type="image/webp"><img src="./img/development/development-6.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">06</span>
+			<h4 class="development__item-title">MULTI LANGUAGE</h4>
+			<p class="development__item-description">Multi language support</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-7.webp" type="image/webp"><img src="./img/development/development-7.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">07</span>
+			<h4 class="development__item-title">3D AND MENU CLOUD EVOLUTION</h4>
+			<p class="development__item-description">
+				Cloud database for 3D, delivery network and Menu management
+			</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-8.webp" type="image/webp"><img src="./img/development/development-8.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">08</span>
+			<h4 class="development__item-title">CUSTOMER PERSONALIZATION TOOLT</h4>
+			<p class="development__item-description">
+				Web app to give users the ability to customize their 3D space
+			</p>
+		</div>
+		<div class="swiper-slide development__item">
+			<div class="development__item-media">
+				<picture><source srcset="./img/development/development-9.webp" type="image/webp"><img src="./img/development/development-9.jpg" alt="" /></picture>
+			</div>
+			<span class="development__item-number">09</span>
+			<h4 class="development__item-title">EVENTS FOR FANS</h4>
+			<p class="development__item-description">
+				Event management to create events for fans and event admin panel
+			</p>
+		</div>
+	</div>
+</div>
+
+			</section>
+
+			<div class="decor"></div>
+
+			<section class="team"><div class="container">
+	<h2 class="team__title section__title">TEAM</h2>
+	<ul class="team__list">
+		<li class="team__item">
+			<div class="team__avatar">
+				<picture><source srcset="./img/team/team-1.webp" type="image/webp"><img src="./img/team/team-1.jpg" alt="" /></picture>
+			</div>
+			<h3 class="team__name">Antonio Longhin</h3>
+			<h4 class="team__position">Business Developer</h4>
+			<p class="team__info">
+				Strategic thinker forging partnerships and driving growth for RINE VR.
+			</p>
+		</li>
+		<li class="team__item">
+			<div class="team__avatar">
+				<picture><source srcset="./img/team/team-2.webp" type="image/webp"><img src="./img/team/team-2.jpg" alt="" /></picture>
+			</div>
+			<h3 class="team__name">Cristiano Piccini</h3>
+			<h4 class="team__position">CEO</h4>
+			<p class="team__info">
+				Experienced entrepreneur leading RINE VR's vision for a transformative
+				metaverse.
+			</p>
+		</li>
+		<li class="team__item">
+			<div class="team__avatar">
+				<picture><source srcset="./img/team/team-3.webp" type="image/webp"><img src="./img/team/team-3.jpg" alt="" /></picture>
+			</div>
+			<h3 class="team__name">Fabio Cesarato</h3>
+			<h4 class="team__position">CTO</h4>
+			<p class="team__info">
+				Innovative technologist driving RINE VR's cutting-edge platform
+				development.
+			</p>
+		</li>
+	</ul>
+	<p class="team__description">
+		“We are proud to be supported by Leahgacy and Airlapp (airlapp.com), two
+		powerful companies dedicated to advancing the field of virtual reality.
+		Together with their expert teams and extensive knowledge, we are creating a
+		groundbreaking metaverse platform that is sure to revolutionize the way we
+		interact in the digital world. Learn more about our partners and their
+		contributions on their respective websites.”
+	</p>
+</div>
+</section>
+
+			<section class="whitelist whitelist--dark">
+				<p class="whitelist__description">
+	In a world where reality is never enough,<br />
+	<span>We are the future.</span>
+</p>
+<button data-popup="#popup-whitelist" class="whitelist__button button">
+	Join the Whitelist
+</button>
+
+			</section>
+
+			<section class="faq"><h2 class="faq__title section__title">FAQ</h2>
+<ul class="spoilers" data-accordion>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			What is RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			RINE VR is a virtual reality platform that allows users to explore,
+			create, and connect in a metaverse environment.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			What devices are compatible with RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			Currently, RINE VR is compatible with Oculus Quest 2 and Oculus Quest Pro.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			How do I access RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			You can access RINE VR by downloading the app from the Oculus store.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			Is RINE VR free to use?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			Yes, RINE VR is free to use. However, some features may require a
+			subscription or additional payment.
+		</div>
+	</li>
+	<li class="spoilers__item spoiler--open">
+		<button class="spoilers__control" aria-expanded="false">
+			What kind of experiences are available on RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			RINE VR offers a range of experiences, including social gatherings,
+			creative tools, and entertainment events.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			Can I create my own content on RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			Yes, RINE VR provides a set of creative tools that allow users to design
+			and customise their own virtual spaces.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			Is there a community aspect to RINE VR?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			Yes, RINE VR has a strong community aspect with opportunities to connect
+			with like-minded individuals and participate in events and activities.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			What is the Platinum NFT membership?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			The Platinum NFT membership is a premium membership that provides
+			exclusive access to certain features and events on RINE VR.
+		</div>
+	</li>
+	<li class="spoilers__item">
+		<button class="spoilers__control" aria-expanded="false">
+			How can I become a Platinum NFT member?
+		</button>
+		<div class="spoilers__content" aria-hidden="true">
+			You can become a Platinum NFT member by purchasing the Platinum NFT on the
+			RINE website or through a supported NFT marketplace.
+		</div>
+	</li>
+</ul>
+</section>
+
+			<div class="decor"></div>
+
+			<section class="talk"><h2 class="talk__title">Let’s talk</h2>
+<form class="talk__form">
+	<ul class="talk__form-list">
+		<li class="talk__form-item">
+			<input type="text" placeholder="Name" class="talk__input" />
+		</li>
+		<li class="talk__form-item">
+			<input
+				type="email"
+				placeholder="Email address*"
+				class="talk__input"
+				required
+			/>
+		</li>
+		<li class="talk__form-item">
+			<input
+				type="text"
+				placeholder="Telegram username*"
+				class="talk__input"
+				required
+			/>
+		</li>
+		<li class="talk__form-item">
+			<input type="text" placeholder="Subject*" class="talk__input" required />
+		</li>
+		<li class="talk__form-item">
+			<input
+				type="text"
+				placeholder="Socials (website/ twitter etc.)*"
+				class="talk__input"
+				required
+			/>
+		</li>
+		<li class="talk__form-item">
+			<input type="text" placeholder="Message*" class="talk__input" required />
+		</li>
+	</ul>
+	<button class="talk__from-submit button">Submit</button>
+</form>
+</section>
+
+			<footer class="footer"><a data-anchor=".header" href="Home" class="footer__logo logo">
+	<img src="./img/logo.svg" alt="Logo" />
+</a>
+<nav class="footer__nav">
+	<a data-anchor=".explore" href="Explore" class="footer__nav-item">Explore</a>
+	<a data-anchor=".utility" href="Utility" class="footer__nav-item">Utility</a>
+	<a data-anchor=".development" href="Roadmap" class="footer__nav-item"
+		>Roadmap</a
+	>
+	<a data-anchor=".team" href="Team" class="footer__nav-item">Team</a>
+	<a data-anchor=".faq" href="FAQ" class="footer__nav-item">FAQ</a>
+	<a data-anchor=".catalog" href="Features" class="footer__nav-item"
+		>Features</a
+	>
+	<a data-anchor=".partner" href="Whitepaper" class="footer__nav-item"
+		>Whitepaper</a
+	>
+</nav>
+<div class="footer__social">
+	<a href="#" class="footer__social-icon">
+		<svg
+			width="32"
+			height="27"
+			viewBox="0 0 32 27"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M10.1157 26.4999C22.0854 26.4999 28.6312 16.498 28.6312 7.82472C28.6312 7.54066 28.6255 7.25789 28.6128 6.9763C29.8864 6.04682 30.9856 4.8959 31.8589 3.5775C30.6929 4.10031 29.4381 4.45221 28.1219 4.61088C29.4654 3.79821 30.4968 2.51287 30.9835 0.980513C29.706 1.7449 28.3085 2.28371 26.8512 2.57374C25.6637 1.29796 23.9732 0.5 22.1011 0.5C18.5074 0.5 15.5932 3.43944 15.5932 7.06272C15.5932 7.5778 15.6503 8.07882 15.762 8.55933C10.3535 8.28483 5.55757 5.67303 2.34789 1.70161C1.76981 2.7032 1.46572 3.84163 1.46671 5.00057C1.46671 7.27775 2.61558 9.28805 4.36261 10.4641C3.32923 10.4323 2.31851 10.1508 1.41541 9.64317C1.41445 9.67076 1.41445 9.6976 1.41445 9.72701C1.41445 12.9057 3.65758 15.5597 6.63523 16.1611C6.07598 16.3148 5.4989 16.3925 4.91927 16.3922C4.50879 16.3919 4.09926 16.3522 3.69622 16.2737C4.52471 18.8817 6.92707 20.7795 9.7753 20.8325C7.54802 22.5933 4.74227 23.642 1.69288 23.642C1.16826 23.642 0.650026 23.612 0.140625 23.5512C3.02067 25.4132 6.44045 26.4996 10.116 26.4996"
+			/>
+		</svg>
+	</a>
+	<a href="#" class="footer__social-icon">
+		<svg
+			width="26"
+			height="30"
+			viewBox="0 0 26 30"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M10.4253 12.6387C9.61461 12.6387 8.97461 13.372 8.97461 14.2667C8.97461 15.1613 9.62883 15.8947 10.4253 15.8947C11.2359 15.8947 11.8759 15.1613 11.8759 14.2667C11.8902 13.372 11.2359 12.6387 10.4253 12.6387ZM15.6164 12.6387C14.8057 12.6387 14.1657 13.372 14.1657 14.2667C14.1657 15.1613 14.8199 15.8947 15.6164 15.8947C16.4271 15.8947 17.0671 15.1613 17.0671 14.2667C17.0671 13.372 16.4271 12.6387 15.6164 12.6387Z"
+			/>
+			<path
+				d="M22.529 0.333374H3.47122C1.86411 0.333374 0.555664 1.68271 0.555664 3.35471V23.184C0.555664 24.856 1.86411 26.2054 3.47122 26.2054H19.5992L18.8454 23.492L20.6659 25.2374L22.3868 26.88L25.4446 29.6667V3.35471C25.4446 1.68271 24.1361 0.333374 22.529 0.333374ZM17.0392 19.488C17.0392 19.488 16.5272 18.8574 16.1006 18.3C17.9637 17.7574 18.6748 16.5547 18.6748 16.5547C18.0917 16.9507 17.537 17.2294 17.0392 17.42C16.3281 17.728 15.6454 17.9334 14.977 18.0507C13.6117 18.3147 12.3601 18.2414 11.2934 18.036C10.4828 17.8747 9.78589 17.64 9.20278 17.4054C8.87566 17.2734 8.52011 17.112 8.16455 16.9067C8.12189 16.8774 8.07922 16.8627 8.03655 16.8334C8.00811 16.8187 7.99389 16.804 7.97966 16.7894C7.72366 16.6427 7.58144 16.54 7.58144 16.54C7.58144 16.54 8.26411 17.7134 10.0703 18.2707C9.64366 18.828 9.11744 19.488 9.11744 19.488C5.97433 19.3854 4.77966 17.2587 4.77966 17.2587C4.77966 12.536 6.82766 8.70804 6.82766 8.70804C8.87566 7.12404 10.8241 7.16804 10.8241 7.16804L10.9663 7.34404C8.40633 8.10671 7.22589 9.26538 7.22589 9.26538C7.22589 9.26538 7.53878 9.08938 8.065 8.84004C9.58677 8.15071 10.7957 7.96004 11.2934 7.91604C11.3788 7.90138 11.4499 7.88671 11.5352 7.88671C12.4028 7.76938 13.3841 7.74004 14.4081 7.85738C15.7592 8.01871 17.2099 8.42938 18.689 9.26538C18.689 9.26538 17.5654 8.16538 15.1477 7.40271L15.3468 7.16804C15.3468 7.16804 17.2952 7.12404 19.3432 8.70804C19.3432 8.70804 21.3912 12.536 21.3912 17.2587C21.3912 17.2587 20.1823 19.3854 17.0392 19.488Z"
+			/>
+		</svg>
+	</a>
+</div>
+</footer>
+		</div>
+
+		<div id="popup-whitelist" class="popup">
+			<div class="popup__container">
+	<div class="popup__head">
+		Join the Whitelist
+		<span class="popup__close"></span>
+	</div>
+	<div class="popup__body">
+		<section class="talk">
+			<form class="talk__form">
+				<ul class="talk__form-list">
+					<li class="talk__form-item">
+						<input type="text" placeholder="Name" class="talk__input" />
+					</li>
+					<li class="talk__form-item">
+						<input
+							type="email"
+							placeholder="Email address*"
+							class="talk__input"
+							required
+						/>
+					</li>
+					<li class="talk__form-item">
+						<input
+							type="text"
+							placeholder="Telegram username*"
+							class="talk__input"
+							required
+						/>
+					</li>
+					<li class="talk__form-item">
+						<input
+							type="text"
+							placeholder="Subject*"
+							class="talk__input"
+							required
+						/>
+					</li>
+					<li class="talk__form-item">
+						<input
+							type="text"
+							placeholder="Socials (website/ twitter etc.)*"
+							class="talk__input"
+							required
+						/>
+					</li>
+					<li class="talk__form-item">
+						<input
+							type="text"
+							placeholder="Message*"
+							class="talk__input"
+							required
+						/>
+					</li>
+				</ul>
+				<button class="talk__from-submit button">Submit</button>
+			</form>
+		</section>
+	</div>
+</div>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230630052401"></script>
+		<script src="js/app.min.js?_v=20230630052401"></script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title": "Главная" })
+	<body>
+		<div class="wrapper">
+			<header class="header animate__animated animate__fadeInDown">
+				@@include('html/header.html')
+			</header>
+
+			<main class="main">
+				<section id="home" class="section home animation">
+					@@include('html/home.html')
+				</section>
+
+				<section id="portfolio" class="section portfolio animation">
+					@@include('html/portfolio.html')
+				</section>
+
+				<section id="skills" class="section section--light skills">
+					@@include('html/skills.html')
+				</section>
+			</main>
+		</div>
+
+		@@include('html/popups.html')
+
+		<!-- https://github.com/mattboldt/typed.js/ -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

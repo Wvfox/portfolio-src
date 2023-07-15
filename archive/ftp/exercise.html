@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/iconFonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Упражнения | FtP</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header header_exercise">
+				<nav class="navigation menu">
+					<ul class="navigation__items">
+						<li class="navigation__item">
+							<a
+								href="./profile.html"
+								class="navigation__link _icon-profile-btn"
+							></a>
+						</li>
+						<li class="navigation__item">
+							<span class="logo">FtP</span>
+						</li>
+						<li class="navigation__item">
+							<button class="navigation__link menu__icon _icon-menu"></button>
+						</li>
+					</ul>
+
+					<ul class="menu__body">
+						<li>
+							<a href="./index.html" class="menu__link">
+								<span class="_icon-home-link"></span>
+								<h4>Главная</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./profile.html" class="menu__link">
+								<span class="_icon-profile-link"></span>
+								<h4>Профиль</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./workout.html" class="menu__link">
+								<span class="_icon-workout"></span>
+								<h4>Тренировки</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./exercise.html" class="menu__link">
+								<span class="_icon-exercise"></span>
+								<h4>Упражнения</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line"
+								><span class="_icon-admin"></span>
+								<h4>Админка</h4></a
+							>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line">
+								<span class="_icon-logout"></span>
+								<h4>Выход</h4>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">Список упражнений</h1>
+			</header>
+
+			<main class="page">
+				<section class="custom-exercise">
+					<div class="section">
+						<h2 class="section__title">Созданные упражнения</h2>
+						<div class="custom-exercise__container _container">
+							<div class="custom-exercise__table table table_five">
+								<ul class="table__row table__row_heading">
+									<li class="table__column"></li>
+									<li class="table__column">#</li>
+									<li class="table__column">Name</li>
+									<li class="table__column">Group</li>
+									<li class="table__column"></li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">
+										<button class="_icon-edit"></button>
+									</li>
+									<li class="table__column">1</li>
+									<li class="table__column">Созданное упражнение 1</li>
+									<li class="table__column">Hands</li>
+									<li class="table__column">
+										<button class="_icon-delete"></button>
+									</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">
+										<button class="_icon-edit"></button>
+									</li>
+									<li class="table__column">2</li>
+									<li class="table__column">Созданное упражнение 2</li>
+									<li class="table__column">Hands</li>
+									<li class="table__column">
+										<button class="_icon-delete"></button>
+									</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">
+										<button class="_icon-edit"></button>
+									</li>
+									<li class="table__column">3</li>
+									<li class="table__column">Созданное упражнение 3</li>
+									<li class="table__column">Hands</li>
+									<li class="table__column">
+										<button class="_icon-delete"></button>
+									</li>
+								</ul>
+
+								<ul class="table__row">
+									<li class="table__column">
+										<button class="_icon-edit"></button>
+									</li>
+									<li class="table__column">4</li>
+									<li class="table__column">Созданное упражнение 4</li>
+									<li class="table__column">Legs</li>
+									<li class="table__column">
+										<button class="_icon-delete"></button>
+									</li>
+								</ul>
+							</div>
+							<div data-spoilers class="custom-create">
+								<button data-spoiler class="custom-create__btn spoiler__title">
+									Создать новое упражнение
+								</button>
+								<form
+									action=""
+									class="custom-create__form form spoiler__content"
+								>
+									<h3 class="custom-create__form-title">
+										Создание нового упражнения
+									</h3>
+									<label class="form__label">
+										<span class="form__title">Название</span>
+										<input
+											type="text"
+											class="form__input"
+											placeholder="Мое новое упражнение"
+										/>
+									</label>
+									<label class="form__label">
+										<span class="form__title">Группа мышц</span>
+										<input
+											type="text"
+											class="form__input"
+											placeholder="Руки + ноги"
+										/>
+									</label>
+									<button class="form__submit">Создать</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="default-exercise">
+					<div class="section">
+						<h2 class="section__title">Базовые упражнения</h2>
+						<div class="default-exercise__container _container">
+							<div class="default-exercise__table table table_three">
+								<ul class="table__row table__row_heading">
+									<li class="table__column">#</li>
+									<li class="table__column">Name</li>
+									<li class="table__column">Group</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">1</li>
+									<li class="table__column">Базовое упражнение 1</li>
+									<li class="table__column">Hands</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">2</li>
+									<li class="table__column">Базовое упражнение 2</li>
+									<li class="table__column">Hands</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">3</li>
+									<li class="table__column">Базовое упражнение 3</li>
+									<li class="table__column">Hands</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">4</li>
+									<li class="table__column">Базовое упражнение 4</li>
+									<li class="table__column">Legs</li>
+								</ul>
+								<ul class="table__row">
+									<li class="table__column">5</li>
+									<li class="table__column">Базовое упражнение 5</li>
+									<li class="table__column">Legs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="container portfolio__container">
+	<h2 class="section__title animate__animated">
+		Список моих <span>работ</span>
+	</h2>
+	<ul class="portfolio__list">
+		<li class="portfolio__item animate__animated">
+			@@include('components/portfolio-item.html', { "media":
+			"metaverse/preview.png", "title": "Метавселенная | Metaverse", "tools":
+			"html css sass js gulp", "demo": "./archive/metaverse/index.html",
+			"server": false, "popup": "popup-metaverse" })
+		</li>
+		<li class="portfolio__item animate__animated">
+			@@include('components/portfolio-item.html', { "media": "ftp/preview.png",
+			               "title": "Приложение для тренировок | FtP",        "tools":
+			"html css sass js react gulp",               "demo":
+			"./archive/ftp/index.html", "server": false, "popup": "popup-ftp" })
+		</li>
+		<li class="portfolio__item animate__animated">
+			@@include('components/portfolio-item.html', { "media":
+			"portfolio-codehal/preview.png", "title": "Сайт-портфолио | Codehal",
+			"tools": "html css js", "demo": "./archive/portfolio-codehal/index.html",
+			"server": false, "popup": "popup-portfolio-codehal" })
+		</li>
+		<li class="portfolio__item animate__animated">
+			@@include('components/portfolio-item.html', { "media":
+			"finsweet/preview.png", "title": "Сайт автомастерской | Finsweet",
+			"tools": "html css js", "demo": "./archive/finsweet/index.html", "server":
+			false, "popup": "popup-finsweet" })
+		</li>
+		<li class="portfolio__item animate__animated">
+			@@include('components/portfolio-item.html', { "media":
+			"qubly/preview.png", "title": "Машинная инженерия | Qubly",    "tools":
+			"html css sass js", "demo": "./archive/qubly/index.html", "server": false,
+			"popup": "popup-qubly" })
+		</li>
+	</ul>
+</div>

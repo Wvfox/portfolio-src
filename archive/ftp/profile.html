@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/iconFonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Профиль | FtP</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header header_profile">
+				<nav class="navigation menu">
+					<ul class="navigation__items">
+						<li class="navigation__item">
+							<a
+								href="./index.html"
+								class="navigation__link _icon-home-btn"
+							></a>
+						</li>
+						<li class="navigation__item">
+							<span class="logo">FtP</span>
+						</li>
+						<li class="navigation__item">
+							<button class="navigation__link menu__icon _icon-menu"></button>
+						</li>
+					</ul>
+
+					<ul class="menu__body">
+						<li>
+							<a href="./index.html" class="menu__link">
+								<span class="_icon-home-link"></span>
+								<h4>Главная</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./profile.html" class="menu__link">
+								<span class="_icon-profile-link"></span>
+								<h4>Профиль</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./workout.html" class="menu__link">
+								<span class="_icon-workout"></span>
+								<h4>Тренировки</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./exercise.html" class="menu__link">
+								<span class="_icon-exercise"></span>
+								<h4>Упражнения</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line"
+								><span class="_icon-admin"></span>
+								<h4>Админка</h4></a
+							>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line">
+								<span class="_icon-logout"></span>
+								<h4>Выход</h4>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">Личный профиль</h1>
+			</header>
+
+			<main class="page">
+				<section class="personal">
+					<div class="bundle bundle_close">
+						<button class="bundle__title personal__title">Личные данные</button>
+						<div class="bundle__wrapper">
+							<div class="personal_container _container">
+								<form action="" class="feedback-form form">
+									<div class="form__section">
+										<label class="form__label">
+											<span class="form__title">Имя</span>
+											<input
+												type="text"
+												class="form__input"
+												placeholder="Ваше имя"
+											/>
+										</label>
+									</div>
+									<div class="form__section">
+										<label class="form__label">
+											<span class="form__title">Фамилия</span>
+											<input
+												type="text"
+												class="form__input"
+												placeholder="Ваша фамилия"
+											/>
+										</label>
+									</div>
+									<div class="form__section">
+										<label class="form__label">
+											<span class="form__title">Почта</span>
+											<input
+												type="text"
+												class="form__input"
+												placeholder="Ваша почта"
+											/>
+										</label>
+									</div>
+									<div class="form__section">
+										<button class="form__submit">Сохранить</button>
+									</div>
+								</form>
+							</div>
+							<button class="bundle__close-btn">
+								<span class="bundle__triangle"></span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="progress">
+					<div class="section">
+						<h2 class="section__title">Ваш прогресс</h2>
+						<div class="progress__container _container">
+							<div class="progress__body">
+								<span class="progress__title">До</span>
+								<img
+									src="./img/background/fox5.webp"
+									alt=""
+									class="progress__media"
+								/>
+							</div>
+							<div class="progress__body">
+								<span class="progress__title">После</span>
+								<img
+									src="./img/background/fox6.webp"
+									alt=""
+									class="progress__media"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="time">
+					<div class="section">
+						<h2 class="section__title">Пришло время для тренировок ?</h2>
+						<div class="time__container _container">
+							<a href="./workout.html" class="time__btn">Тренировки</a>
+							<a href="./exercise.html" class="time__btn">Упражнения</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

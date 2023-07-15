@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/iconFonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Главная | FtP</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header header_home">
+				<nav class="navigation menu">
+					<ul class="navigation__items">
+						<li class="navigation__item">
+							<a
+								href="./profile.html"
+								class="navigation__link _icon-profile-btn"
+							></a>
+						</li>
+						<li class="navigation__item">
+							<span class="logo">FtP</span>
+						</li>
+						<li class="navigation__item">
+							<button class="navigation__link menu__icon _icon-menu"></button>
+						</li>
+					</ul>
+
+					<ul class="menu__body">
+						<li>
+							<a href="./index.html" class="menu__link">
+								<span class="_icon-home-link"></span>
+								<h4>Главная</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./profile.html" class="menu__link">
+								<span class="_icon-profile-link"></span>
+								<h4>Профиль</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./workout.html" class="menu__link">
+								<span class="_icon-workout"></span>
+								<h4>Тренировки</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./exercise.html" class="menu__link">
+								<span class="_icon-exercise"></span>
+								<h4>Упражнения</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line"
+								><span class="_icon-admin"></span>
+								<h4>Админка</h4></a
+							>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line">
+								<span class="_icon-logout"></span>
+								<h4>Выход</h4>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">Добро пожаловать!</h1>
+			</header>
+
+			<main class="page">
+				<section class="news">
+					<div class="section">
+						<h2 class="section__title">Что нового ?</h2>
+						<div class="news__container _container">
+							<h3 class="news__title">#1 Начало разработки - 02.06.2023</h3>
+							<div class="news__content">
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Velit nostrum similique officia dicta tenetur sequi cum
+									suscipit, esse debitis fuga?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+									veniam doloremque natus minima cupiditate deserunt?
+								</p>
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+									asperiores culpa ut voluptas non harum itaque veritatis,
+									dolore saepe impedit omnis adipisci? Voluptate illum vel rerum
+									asperiores quae fugit adipisci.
+								</p>
+							</div>
+							<a href="" class="news__btn">Все новости</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="description">
+					<div class="bundle bundle_close">
+						<button class="bundle__title">Краткий экскурс</button>
+						<div class="bundle__wrapper">
+							<div class="description__container _container">
+								<div class="description__content">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+										cumque animi, eos nulla reprehenderit dolore.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+										inventore unde eaque. Porro enim delectus, optio iste
+										doloribus voluptate recusandae nobis reiciendis? Accusantium
+										error est sunt consequuntur blanditiis explicabo voluptates!
+									</p>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+										Officiis vel eum id dignissimos facilis mollitia a dolores
+										obcaecati iusto saepe.
+									</p>
+								</div>
+							</div>
+							<button class="bundle__close-btn">
+								<span class="bundle__triangle"></span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="faq spoiler">
+					<div class="section">
+						<h2 class="section__title">Часто задаваемые вопросы</h2>
+						<div class="faq__container">
+							<div
+								data-spoilers
+								data-one-spoiler
+								class="spoiler__container _container"
+							>
+								<ul class="spoiler__items">
+									<li class="spoiler__item">
+										<button data-spoiler class="spoiler__title _active">
+											Для чего этот сайт ?
+										</button>
+										<div class="spoiler__content">
+											<p>
+												Этот сайт был создан для отслеживания выполнения
+												тренировок и собственного прогресса.
+											</p>
+										</div>
+									</li>
+									<li class="spoiler__item">
+										<button data-spoiler class="spoiler__title">
+											Какие тут возможности ?
+										</button>
+										<div class="spoiler__content">
+											<p>
+												Здесь можно создавать тренировки из базовых упражнений
+												или создать кастомные упражнения и добавить их в свою
+												тренировку!
+											</p>
+											<p>
+												В профиле можно увидеть статистику выполнения тренировок
+												и упражнений, а так же текущий прогресс.
+											</p>
+										</div>
+									</li>
+									<li class="spoiler__item">
+										<button data-spoiler class="spoiler__title">
+											Есть ли полноценная версия для больших экранов ?
+										</button>
+										<div class="spoiler__content">
+											<p>
+												Данное приложение разрабатывалось изначально для
+												телефонов, поэтому версии для больших экранов нет.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<a href="" class="faq__btn">Другие вопросы</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="feedback">
+					<button href="#popup__feedback" class="feedback__btn popup-link">
+						Обратная связь
+					</button>
+				</section>
+			</main>
+		</div>
+
+		<div id="popup__feedback" class="popup popup-feedback">
+			<div class="popup__body">
+				<div class="popup__container">
+					<button class="popup__close close-popup _icon-close"></button>
+					<h5 class="popup__title">Форма обратной связи</h5>
+					<div class="popup__content">
+						<form action="" class="feedback-form form">
+							<div class="form__section">
+								<label class="form__label">
+									<span class="form__title">Имя</span>
+									<input
+										type="text"
+										class="form__input"
+										placeholder="Ваше имя"
+									/>
+								</label>
+								<label class="form__label">
+									<span class="form__title">Почта</span>
+									<input
+										type="text"
+										class="form__input"
+										placeholder="Ваша почта"
+									/>
+								</label>
+							</div>
+							<div class="form__section">
+								<label class="form__label">
+									<span class="form__title">Описание</span>
+									<textarea
+										type="text"
+										class="form__input form__input_textarea"
+										placeholder="Здесь вы можете описать ваш отклик..."
+									></textarea>
+								</label>
+							</div>
+							<div class="form__section">
+								<button class="form__submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+@use 'sass:math';
+//@import 'fonts';
+@import 'reset';
+@import 'vars';
+
+//==========================================================
+//====================COMPONENTS============================
+
+@import './components/global';
+@import './components/header';
+@import './components/home';
+@import './components/skills';
+@import './components/portfolio';
+@import './components/popup';

@@ -1,0 +1,197 @@
+//==============================================================
+// =========================PORTFOLIO===========================
+
+.portfolio {
+	&__container {
+		padding: 80px 0;
+	}
+	&__list {
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px;
+		@media only screen and (max-width: 1320px) {
+			padding: 0 20px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media only screen and (max-width: 992px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item {
+		background-color: $bg-color-dark;
+		box-shadow: 0 0 10px $primary;
+		border-radius: 10px;
+		border: 3px solid $primary;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.3s ease;
+		@media only screen and (max-width: 1320px) {
+			width: 460px;
+			margin: 0 auto;
+		}
+		@media only screen and (max-width: 768px) {
+			width: 400px;
+		}
+		@media only screen and (max-width: 480px) {
+			width: 300px;
+		}
+		@media only screen and (max-width: 340px) {
+			width: 270px;
+		}
+		&:hover {
+			box-shadow: 0 0 30px $primary;
+		}
+		&-media {
+			height: 260px;
+			border-radius: 8px 8px 0 0;
+			border-bottom: 3px solid $primary;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			@media only screen and (max-width: 480px) {
+				height: 180px;
+			}
+		}
+		&-body {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+		&-line {
+			margin: 10px 0;
+			height: 2px;
+			width: 100%;
+			background-color: $white;
+			opacity: 0.5;
+		}
+		&-point {
+			padding: 10px 0;
+			display: flex;
+			flex-direction: column;
+			font-size: rem(22);
+			letter-spacing: 1px;
+			line-height: 1.2;
+			@media only screen and (max-width: 480px) {
+				font-size: 18px;
+			}
+			span {
+				margin-bottom: 8px;
+				font-size: rem(18);
+				opacity: 0.7;
+				@media only screen and (max-width: 480px) {
+					font-size: 16px;
+				}
+			}
+		}
+		&-server {
+			padding: 12px 0 20px;
+			display: flex;
+			font-size: rem(22);
+			&:hover {
+				.portfolio__server-check {
+					background-color: $bg-color-dark;
+					border-color: $bg-color-dark;
+					&::before,
+					&:after {
+						background-color: $additional;
+					}
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				font-size: 18px;
+			}
+		}
+		&-nav {
+			margin-top: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@media only screen and (max-width: 480px) {
+				margin-top: 0px;
+			}
+		}
+		&-more {
+			@media only screen and (max-width: 768px) {
+				font-size: 28px;
+				line-height: 1.4;
+			}
+			@media only screen and (max-width: 480px) {
+				font-size: 16px;
+				line-height: 1.1;
+				margin-right: 10px;
+			}
+		}
+		&-demo {
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			font-size: 32px;
+			color: $primary;
+			fill: $primary;
+			transition: all 0.3s ease;
+			@media only screen and (max-width: 480px) {
+				font-size: 24px;
+			}
+			&:hover {
+				color: $additional;
+				fill: $additional;
+				text-shadow: 0 0 4px $additional;
+			}
+		}
+	}
+	&__tools {
+		margin: 10px 0 -5px;
+		flex-wrap: wrap;
+	}
+	&__server-check {
+		margin-left: 10px;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $primary;
+		border-radius: 4px;
+		border: 2px solid $primary;
+		position: relative;
+		transition: all 0.4s ease;
+		&::before,
+		&:after {
+			content: '';
+			position: absolute;
+			height: 110%;
+			width: 4px;
+			border-radius: 4px;
+			background-color: $bg-color-dark;
+			transition: all 0.3s ease;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+		&--true {
+			&::before {
+				height: 70%;
+				left: 20%;
+				bottom: 0;
+				transform: rotate(150deg);
+			}
+			&::after {
+				height: 100%;
+				right: 22%;
+				transform: rotate(30deg);
+			}
+		}
+	}
+	&__demo-arrow {
+		margin: 10px 0 0 5px;
+		width: 32px;
+		@media only screen and (max-width: 480px) {
+			width: 24px;
+		}
+	}
+}

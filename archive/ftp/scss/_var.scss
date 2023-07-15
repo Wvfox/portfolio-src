@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,800&display=swap');
+
+$scrollbar_width: 8px;
+
+$max_width: 500px;
+$section_width: 456px;
+$header_height: 60px;
+
+$background_size: 320px;
+
+$accent: #4b92cf;
+$select: #4fe3e2;
+$dark_accent: darken($accent, 25%);
+$hard_dark_accent: darken($accent, 50%);
+$white: #d7d7d7;
+$black: #0e0e0e;
+$gray: #1c1c1c;
+$light_gray: lighten($gray, 50%);
+
+$border_table_color: rgba($hard_dark_accent, 0.8);
+$background_table_odd: rgba($white, 0.03);
+$background_table_even: rgba($black, 0.4);
+$color-table-even: lighten($dark_accent, 40%);

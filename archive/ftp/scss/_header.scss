@@ -1,0 +1,157 @@
+/* --Header-- */
+
+.header {
+	margin: 0 0 40px;
+	min-height: $background-size;
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	@include background_blur($top: calc($background-size - 20px));
+
+	.header__title {
+		margin: 0 auto 45px 20px;
+		padding: 8px 20px;
+		border-radius: 25px;
+		font-style: italic;
+		font-size: 2em;
+		color: $accent;
+		@include background_blur(
+			$top: -5px,
+			$left: -5px,
+			$right: -5px,
+			$bottom: -5px
+		);
+	}
+	&_home {
+		background: center 0% / cover no-repeat url('../img/background/home.webp');
+	}
+	&_profile {
+		background: center 0% / cover no-repeat
+			url('../img/background/profile.webp');
+	}
+	&_workout {
+		background: center 0% / cover no-repeat
+			url('../img/background/workout.webp');
+	}
+	&_exercise {
+		background: center 0% / cover no-repeat
+			url('../img/background/exercise.webp');
+	}
+
+	.navigation {
+		flex: 0 0 $max_width;
+		min-height: 90px;
+		display: flex;
+		justify-content: center;
+		position: fixed;
+		top: 0;
+		left: -$scrollbar_width; //Полоса прокрутки
+		right: 0;
+		z-index: 10;
+
+		&__items {
+			flex: 0 0 $max_width;
+			padding: 12px 60px 0;
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+			position: relative;
+			overflow: hidden;
+			@media (max-width: 500px) {
+				justify-content: space-around;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: -15px;
+				left: -20px;
+				right: -20px;
+				bottom: 0;
+				height: 85px;
+				padding-bottom: 0px;
+				filter: blur(10px);
+				background-color: $black;
+				opacity: 0.95;
+				z-index: -1;
+			}
+		}
+		&__item {
+			.logo {
+				padding: 7px 0 0 25px;
+				display: block;
+				color: $accent;
+				font-size: 30px;
+				font-style: italic;
+				letter-spacing: 4px;
+			}
+		}
+		&__link {
+			display: block;
+			padding: 5px;
+			width: 36px;
+			height: 36px;
+			font-size: 36px;
+			color: $accent;
+			@include select();
+		}
+
+		.menu {
+			&__icon {
+			}
+
+			&__body {
+				padding: 10px;
+				border-radius: 0 20px;
+				@media (max-width: 500px) {
+					border-radius: 20px 0;
+				}
+				color: $white;
+				font-size: 15px;
+				list-style: none;
+				background-color: rgba($black, 0.9);
+				position: absolute;
+				top: 60px;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.3s ease;
+				transform: translateX(160px);
+				@media (max-width: 500px) {
+					transform: translateX(100px);
+				}
+			}
+
+			&__link {
+				margin: 5px 0;
+				padding: 5px 0 5px 5px;
+				display: flex;
+				position: relative;
+				@include select();
+
+				span {
+					font-size: 20px;
+					margin: 0 10px;
+				}
+
+				h4 {
+					padding: 2px 0;
+					margin: 0 10px 0 0;
+				}
+
+				&_line:before {
+					content: '';
+					position: absolute;
+					top: -5px;
+					left: 0;
+					right: 0;
+					height: 1px;
+					background-color: rgba($white, 0.4);
+				}
+			}
+
+			&_open {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}

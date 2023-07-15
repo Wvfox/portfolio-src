@@ -1,0 +1,327 @@
+@import 'vars';
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	.main_banner {
+		.main_info {
+			> h1 {
+				font-size: 40px;
+			}
+		}
+	}
+	#feedback {
+		.info {
+			> h2 {
+				font-size: 26px;
+			}
+		}
+		.form_content {
+			input::placeholder {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	.img-responsive {
+		display: none;
+	}
+	#stack,
+	#engin {
+		.content {
+			align-items: center;
+			text-align: center;
+		}
+	}
+	#why,
+	#stack,
+	#engin {
+		margin: 0px 0 160px 0;
+	}
+	#reviews {
+		padding: 0;
+		.rev_item {
+			.quote {
+				font-size: 20px;
+			}
+			> img {
+				margin: 0;
+			}
+		}
+		.comment_list {
+			> li {
+				flex-wrap: wrap;
+				width: 20%;
+				margin: 0 5%;
+				&:nth-child(n + 4) {
+					margin: 7% auto;
+				}
+			}
+		}
+	}
+	#feedback {
+		.info {
+			.partner_list {
+				margin: 0 0 100px 0;
+				> li {
+					margin: 3% 12.5%;
+				}
+			}
+		}
+	}
+	#footer {
+		text-align: center;
+		.content {
+			margin: 0 0 50px 0;
+		}
+		.info {
+			padding: 0 40px;
+			.menu_social {
+				justify-content: center;
+				> li {
+					margin: 0;
+					&:nth-child(2) {
+						margin: 0 40px;
+					}
+				}
+			}
+		}
+		.newsletter {
+			> form {
+				margin: 30px auto;
+			}
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	.btn_simple {
+		display: none;
+	}
+	.main_banner {
+		padding: 60px 0 200px;
+		text-align: center;
+		.img_responsive {
+			width: 75%;
+		}
+		.notif {
+			margin: 0 auto;
+		}
+		.main_info {
+			h1 {
+				font-size: 28px;
+				line-height: 36px;
+			}
+			.description {
+				font-size: 14px;
+			}
+			.btns {
+				display: flex;
+				justify-content: center;
+				.btn {
+					display: block;
+					width: 40%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	#why,
+	#stack,
+	#engin {
+		margin: 0px 0 120px 0;
+		.info {
+			> h2 {
+				font-size: 26px;
+			}
+			.description {
+				font-size: 14px;
+			}
+		}
+		.row_item {
+			margin: 20px 0;
+		}
+	}
+	#reviews {
+		.rev_item {
+			.quote {
+				font-size: 14px;
+				height: 70px;
+				overflow: hidden;
+				margin: 0 0 15px;
+			}
+			.name,
+			.position {
+				font-size: 14px;
+			}
+		}
+		.comment_list {
+			margin: 0 0 60px 0;
+		}
+	}
+	#feedback {
+		margin: 0 0 40px;
+		.form_content {
+			input {
+				&::placeholder {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	#footer {
+		.menu_social {
+			display: none;
+		}
+		.newsletter {
+			padding: 0 20px 0 0;
+			.second_menu {
+				display: flex;
+				justify-content: center;
+				> li {
+					margin: 0;
+					&:nth-child(2) {
+						margin: 20px 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	#header {
+		position: relative;
+		.right_side_header {
+			.hamburger {
+				display: block;
+			}
+			.menu_top {
+				display: none;
+				background-color: #fff;
+				padding: 0 0 15px 25px;
+				position: absolute !important;
+				top: 70px;
+				left: 0;
+				right: 0;
+				z-index: 10;
+				> li {
+					width: 100%;
+				}
+			}
+		}
+	}
+	#header .inner_header .right_side_header .menu_top > li.has_sub_menu::after {
+		display: none;
+	}
+	#header .inner_header .right_side_header .menu_top > li .sub_menu {
+		position: relative;
+		display: block;
+		font-size: 14px;
+		box-shadow: none;
+		padding: 5px 20px 0;
+		> li {
+			margin: 0 0 5px;
+		}
+	}
+	.main_banner {
+		padding: 60px 0 120px;
+		.main_info {
+			> h1 {
+				font-size: 24px;
+				line-height: 30px;
+			}
+			.description {
+				font-size: 13px;
+			}
+			.btns {
+				flex-wrap: wrap;
+				.btn {
+					width: 100%;
+					&:first-child {
+						margin: 0 0 25px 0;
+					}
+				}
+			}
+		}
+	}
+	#why,
+	#stack,
+	#engin,
+	#feedback {
+		.notif {
+			font-size: 14px;
+		}
+		.info {
+			> h2 {
+				font-size: 22px;
+				padding: 0 10px;
+			}
+		}
+	}
+	#reviews {
+		.rev_item {
+			> img {
+				width: 60px;
+				height: 60px;
+			}
+			.name,
+			.position {
+				font-size: 13px;
+			}
+		}
+		.comment_list {
+			> li {
+				width: 27%;
+				margin: 0px 2%;
+			}
+		}
+	}
+	#feedback .info .trust::before,
+	#feedback .info .trust::after {
+		width: 70px;
+	}
+	#feedback {
+		.info {
+			.partner_list {
+				margin: 0 0 40px 0;
+			}
+		}
+		.form_wrp {
+			.form_content {
+				width: 100%;
+				border: none;
+				box-shadow: none;
+				transform: none;
+				> form {
+					> h3 {
+						font-size: 20px;
+					}
+					input {
+						padding: 8px;
+					}
+					.btn_form {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	#footer {
+		.content {
+			flex-wrap: wrap;
+			> ul {
+				width: 50%;
+				&:nth-child(1) {
+					margin: 0 0 40px 0;
+				}
+			}
+		}
+	}
+}

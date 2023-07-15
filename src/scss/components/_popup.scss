@@ -1,0 +1,189 @@
+//==============================================================
+// ============================POPUP============================
+
+.popup {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	pointer-events: none;
+	transition: all 0.5s ease 0s;
+	&--active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: stroke;
+	}
+	&__container {
+		margin: 40px 0;
+		height: fit-content;
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		background-color: $bg-color-dark;
+		box-shadow: 0 0 10px $primary;
+		border-radius: 10px;
+		border: 2px solid $primary;
+		color: $white;
+		@media only screen and (max-width: 1320px) {
+			margin: 80px 0;
+		}
+		@media only screen and (max-width: 768px) {
+			width: 90vw;
+		}
+	}
+	&__media {
+		height: 100%;
+		border-radius: 8px 8px 0 0;
+		overflow: hidden;
+	}
+	.swiper {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		&-button-prev,
+		&-button-next {
+			height: calc(100% - 40px);
+			width: 180px;
+			top: 22px;
+			color: transparent;
+			font-weight: 900;
+			transition: all 0.3s ease;
+			@media only screen and (max-width: 1320px) {
+				width: 140px;
+			}
+			@media only screen and (max-width: 768px) {
+				width: 100px;
+			}
+			&:after {
+				font-size: 56px;
+			}
+			&:hover {
+				color: $additional;
+				background-color: rgba($black, 0.7);
+			}
+		}
+		&-button-prev {
+			border-radius: 7px 0 0 0;
+			left: 0;
+		}
+		&-button-next {
+			border-radius: 0 7px 0 0;
+			right: 0;
+		}
+		&-pagination {
+			bottom: 0;
+			&-bullet {
+				margin: 0 8px !important;
+				background-color: rgba($white, 0.7);
+				width: 18px;
+				height: 18px;
+			}
+		}
+		&-slide {
+			padding-bottom: 40px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&__head {
+		margin: 0 20px;
+		padding: 0 20px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid rgba($white, 0.5);
+		font-size: 32px;
+		font-style: italic;
+		font-weight: 700;
+		letter-spacing: 1px;
+		position: relative;
+		@media only screen and (max-width: 1320px) {
+			flex-direction: column;
+			align-items: start;
+			gap: 20px;
+		}
+		&-title {
+			@media only screen and (max-width: 1320px) {
+				margin-top: 10px;
+			}
+			@media only screen and (max-width: 768px) {
+				margin-top: 20px;
+				font-size: 24px;
+				padding-right: 30px;
+			}
+		}
+		&-tools {
+			@media only screen and (max-width: 1320px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		.tools-item {
+			@media only screen and (max-width: 768px) {
+				width: 44px;
+			}
+		}
+	}
+	&__close {
+		padding: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: +2;
+		background-color: rgba(#000, 0.7);
+		border-radius: 50%;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+	&__close::before,
+	&__close::after {
+		content: '';
+		width: 40px;
+		height: 4px;
+		background-color: $primary;
+		position: absolute;
+		transition: all 0.3s ease;
+	}
+	&__close::before {
+		transform: rotate(45deg);
+	}
+	&__close::after {
+		transform: rotate(-45deg);
+	}
+	&__close:hover::before,
+	&__close:hover::after {
+		background-color: aqua;
+	}
+	&__body {
+		padding: 20px 40px 40px;
+		font-size: rem(20);
+		@media only screen and (max-width: 768px) {
+			font-size: rem(18);
+		}
+		@media only screen and (max-width: 480px) {
+			font-size: rem(16);
+		}
+		p {
+			line-height: 1.4;
+		}
+		p:first-child {
+			text-indent: 15px;
+		}
+		p:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

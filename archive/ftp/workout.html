@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/iconFonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Тренировки | FtP</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header header_workout">
+				<nav class="navigation menu">
+					<ul class="navigation__items">
+						<li class="navigation__item">
+							<a
+								href="./profile.html"
+								class="navigation__link _icon-profile-btn"
+							></a>
+						</li>
+						<li class="navigation__item">
+							<span class="logo">FtP</span>
+						</li>
+						<li class="navigation__item">
+							<button class="navigation__link menu__icon _icon-menu"></button>
+						</li>
+					</ul>
+
+					<ul class="menu__body">
+						<li>
+							<a href="./index.html" class="menu__link">
+								<span class="_icon-home-link"></span>
+								<h4>Главная</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./profile.html" class="menu__link">
+								<span class="_icon-profile-link"></span>
+								<h4>Профиль</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./workout.html" class="menu__link">
+								<span class="_icon-workout"></span>
+								<h4>Тренировки</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./exercise.html" class="menu__link">
+								<span class="_icon-exercise"></span>
+								<h4>Упражнения</h4>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line"
+								><span class="_icon-admin"></span>
+								<h4>Админка</h4></a
+							>
+						</li>
+						<li>
+							<a href="./index.html" class="menu__link menu__link_line">
+								<span class="_icon-logout"></span>
+								<h4>Выход</h4>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">Список тренировок</h1>
+			</header>
+
+			<main class="page">
+				<section class="list-workout">
+					<div class="section">
+						<h2 class="section__title">Ваши тренировки</h2>
+						<div class="custom-exercise__container _container">
+							<div class="custom-exercise__table table table_four">
+								<ul href="" class="table__row table__row_heading">
+									<li class="table__column">#</li>
+									<li class="table__column">Название</li>
+									<li class="table__column">Группы мышц</li>
+									<li class="table__column"></li>
+								</ul>
+								<a href="" class="table__row">
+									<div class="table__column">1</div>
+									<div class="table__column">Тренировка 1</div>
+									<div class="table__column">Ноги</div>
+									<div class="table__column">
+										<button class="_icon-delete"></button>
+									</div>
+								</a>
+								<a href="" class="table__row">
+									<div class="table__column">2</div>
+									<div class="table__column">Тренировка 2</div>
+									<div class="table__column">Спина</div>
+									<div class="table__column">
+										<button class="_icon-delete"></button>
+									</div>
+								</a>
+								<a href="" class="table__row">
+									<div class="table__column">4</div>
+									<div class="table__column">Тренировка 3</div>
+									<div class="table__column">Ноги</div>
+									<div class="table__column">
+										<button class="_icon-delete"></button>
+									</div>
+								</a>
+							</div>
+							<div data-spoilers class="custom-create">
+								<button data-spoiler class="custom-create__btn spoiler__title">
+									Создать новую тренировку
+								</button>
+								<form
+									action=""
+									class="custom-create__form form spoiler__content"
+								>
+									<h3 class="custom-create__form-title">
+										Создание новой тренировки
+									</h3>
+									<label class="form__label">
+										<span class="form__title">Название</span>
+										<input
+											type="text"
+											class="form__input"
+											placeholder="Моя новая тренировки"
+										/>
+									</label>
+									<label class="form__label">
+										<span class="form__title">Упражнения</span>
+										<input
+											type="text"
+											class="form__input"
+											placeholder="Отжимания, пресс..."
+										/>
+									</label>
+									<button class="form__submit">Создать</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
