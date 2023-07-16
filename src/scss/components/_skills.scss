@@ -47,6 +47,12 @@
 		font-weight: 700;
 		font-style: italic;
 		text-align: center;
+		@media only screen and (max-width: 768px) {
+			font-size: 28px;
+		}
+		@media only screen and (max-width: 480px) {
+			font-size: 24px;
+		}
 	}
 	&__statistics {
 		margin-top: 30px;
