@@ -19,25 +19,23 @@
 		}
 	}
 	&__body {
+		margin: 0 20px;
 		padding: 30px;
-		min-width: 460px;
+		width: 500px;
 		background-color: $bg-color-dark;
 		box-shadow: 0 0 8px $primary;
 		border-radius: 10px;
 		border: 3px solid $primary;
 		transition: all 0.3s ease;
-		@media only screen and (max-width: 992px) {
-			max-width: 500px;
-		}
 		@media only screen and (max-width: 768px) {
-			min-width: 400px;
+			width: 400px;
 		}
 		@media only screen and (max-width: 480px) {
-			min-width: 300px;
+			width: 300px;
 			padding: 20px;
 		}
 		@media only screen and (max-width: 340px) {
-			min-width: 270px;
+			width: 270px;
 		}
 		&:hover {
 			box-shadow: 0 0 20px $primary;
