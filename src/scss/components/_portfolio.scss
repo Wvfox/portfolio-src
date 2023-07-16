@@ -115,11 +115,11 @@
 		}
 		&-more {
 			@media only screen and (max-width: 768px) {
-				font-size: 28px;
+				font-size: 24px;
 				line-height: 1.4;
 			}
 			@media only screen and (max-width: 480px) {
-				font-size: 16px;
+				font-size: 14px;
 				line-height: 1.1;
 				margin-right: 10px;
 			}
@@ -190,8 +190,8 @@
 	&__demo-arrow {
 		margin: 10px 0 0 5px;
 		width: 32px;
-		@media only screen and (max-width: 480px) {
-			width: 24px;
+		@media only screen and (max-width: 768px) {
+			display: none;
 		}
 	}
 }
