@@ -1,15 +1,94 @@
 .faq {
 	&__container {
-		height: 100vh;
 	}
 	&__content {
 		margin: 60px auto 0;
-		padding: 30px;
-		width: 1000px;
+		max-width: 800px;
 		background-color: $bg-color-dark;
 		box-shadow: 0 0 8px $primary;
 		border-radius: 10px;
 		border: 3px solid $primary;
 		transition: all 0.3s ease;
+	}
+	&__list {
+		.spoilers__item:last-child {
+			.faq__title {
+				border-bottom: none;
+			}
+			.faq__description {
+				border-top: 3px solid $primary;
+				border-bottom: none;
+			}
+		}
+	}
+	&__title {
+		padding: 20px 100px 20px 30px;
+		border-bottom: 3px solid $primary;
+		font-size: 36px;
+		text-align: left;
+		position: relative;
+		opacity: 0.8;
+		transition: all 0.3s ease;
+		.spoiler--open & {
+			color: $white;
+			opacity: 1;
+		}
+		@media only screen and (max-width: 1320px) {
+			font-size: 32px;
+		}
+		@media only screen and (max-width: 768px) {
+			padding: 20px 80px 20px 20px;
+			font-size: 28px;
+		}
+		@media only screen and (max-width: 480px) {
+			font-size: 24px;
+		}
+		&::after,
+		&::before {
+			content: '';
+			width: 30px;
+			height: 3px;
+			background-color: $white;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			transition: transform 0.3s ease 0s;
+			transition: all 0.3s ease;
+			@media only screen and (max-width: 1320px) {
+				width: 28px;
+			}
+			@media only screen and (max-width: 768px) {
+				width: 26px;
+			}
+			@media only screen and (max-width: 480px) {
+				width: 24px;
+			}
+		}
+		&::after {
+			transform: rotate(-90deg);
+		}
+		.spoiler--open &::after {
+			transform: rotate(0deg);
+		}
+		.spoiler--open &::after,
+		.spoiler--open &::before {
+			background-color: $white;
+		}
+		&:hover {
+			color: $additional;
+			opacity: 1;
+			&::after,
+			&::before {
+				background-color: $additional;
+			}
+		}
+	}
+	&__description {
+		padding: 0 30px;
+		border-bottom: 3px solid transparent;
+		.spoiler--open & {
+			border-bottom: 3px solid $primary;
+			padding: 20px 30px;
+		}
 	}
 }
