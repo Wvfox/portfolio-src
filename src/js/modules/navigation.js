@@ -1,7 +1,4 @@
 export function navigation() {
-	// Переменная для выполнения проверки, есть анимация прокрутки или нет
-	// -1 - означает отсутствие действующей анимации
-	let scrolling = -1
 	// Настройка ссылок навигации
 	let navLinks = document.querySelectorAll('[data-goto]')
 	if (navLinks.length > 0) {
@@ -23,14 +20,6 @@ export function navigation() {
 					gotoBlock.getBoundingClientRect().top +
 					scrollY -
 					document.querySelector('header').offsetHeight
-
-				// Если значение меньше 0, то выставляется 0 как верхняя граница
-				// В остальных случаях присваивается округленное значение
-				if (gotoBlockValue < 0) {
-					scrolling = 0
-				} else {
-					scrolling = parseInt(gotoBlockValue)
-				}
 
 				// Скрытие меню при нажатии на пункт меню
 				if (menuIcon.classList.contains('menu--active')) {
@@ -80,16 +69,7 @@ export function navigation() {
 
 		// Смена активного пункта при скролле
 		window.addEventListener('scroll', () => {
-			// Отключение проверки на время анимации прокрутки при клике на кнопку навигации
-			if (scrolling != -1) {
-				if (scrolling == window.scrollY) {
-					scrolling = -1
-					activeMenuLink()
-				}
-			} else {
-				// Выполняет проверку, если не идет анимация прокрутки
-				activeMenuLink()
-			}
+			activeMenuLink()
 		})
 
 		// Функция активация пункта меню
