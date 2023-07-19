@@ -1,0 +1,43 @@
+//==================================================================
+//===============================SPOILERS===========================
+.spoilers {
+	&__item {
+	}
+	&__control {
+		width: 100%;
+		position: relative;
+		cursor: pointer;
+	}
+	&__control::-webkit-details-marker {
+		display: none;
+	}
+	// &__control::after,
+	// &__control::before {
+	// 	content: '';
+	// 	width: 20px;
+	// 	height: 1px;
+	// 	background-color: #fff;
+	// 	position: absolute;
+	// 	left: -10px;
+	// 	top: 25%;
+	// 	transition: transform 0.3s ease 0s;
+	// }
+	// &__control::after {
+	// 	transform: rotate(-90deg);
+	// }
+	// .spoiler--open &__control::after {
+	// 	transform: rotate(0deg);
+	// }
+	&__content {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		will-change: max-height;
+		box-sizing: content-box;
+		transition: all 0.3s ease;
+	}
+	.spoiler--open &__content {
+		padding: 20px 10px;
+		opacity: 1;
+	}
+}

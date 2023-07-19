@@ -3,6 +3,7 @@ import { isWebp } from './modules/imageFormat.js'
 import { navigation } from './modules/navigation.js'
 import { popup } from './modules/popup.js'
 import { slider } from './modules/sliders.js'
+import { spoilersActivate } from './modules/spoilers.js'
 import { fillProgressBar } from './modules/statisticsItems.js'
 import { typedJs } from './modules/typedJs.js'
 
@@ -13,3 +14,4 @@ typedJs()
 popup()
 slider()
 animations()
+spoilersActivate()

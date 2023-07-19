@@ -1,0 +1,47 @@
+//==================================================================
+//============================ANIMATION=============================
+.animation {
+	&--show #home-content {
+		animation-name: slideInLeft;
+	}
+	&--hidden #home-content {
+		animation-name: slideOutLeft;
+	}
+	@media only screen and (max-width: 1320px) {
+		&--show #home-content {
+			animation-name: fadeIn;
+		}
+		&--hidden #home-content {
+			animation-name: fadeOut;
+		}
+	}
+	&--show #home-media {
+		animation-name: slideInRight;
+	}
+	&--hidden #home-media {
+		animation-name: slideOutRight;
+	}
+
+	&--show .section__title {
+		animation-name: fadeInUp;
+	}
+	&--hidden .section__title {
+		animation-name: fadeOutDown;
+	}
+
+	&--show #skills-content-left,
+	&--show #skills-content-right {
+		animation-name: fadeIn;
+	}
+	&--hidden #skills-content-left,
+	&--hidden #skills-content-right {
+		animation-name: fadeOut;
+	}
+
+	&--show .portfolio__item {
+		animation-name: zoomIn;
+	}
+	&--hidden .portfolio__item {
+		animation-name: zoomOut;
+	}
+}

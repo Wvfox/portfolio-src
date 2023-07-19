@@ -1,0 +1,63 @@
+//==================================================================
+//===============================TOOLS==============================
+.tools {
+	width: fit-content;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	&-item {
+		display: none;
+		width: 50px;
+		fill: $primary;
+		transition: all 0.3s ease;
+		@media only screen and (max-width: 480px) {
+			width: 40px;
+		}
+		@media only screen and (max-width: 480px) {
+			width: 34px;
+		}
+		&:hover {
+			fill: $additional;
+		}
+	}
+}
+.html {
+	.tools--html {
+		display: block;
+	}
+}
+.css {
+	.tools--css {
+		display: block;
+	}
+}
+.sass {
+	.tools--sass {
+		display: block;
+	}
+}
+.js {
+	.tools--js {
+		display: block;
+	}
+}
+.wp {
+	.tools--wp {
+		display: block;
+	}
+}
+.react {
+	.tools--react {
+		display: block;
+	}
+}
+.gulp {
+	.tools--gulp {
+		display: block;
+	}
+}
+.django {
+	.tools--django {
+		display: block;
+	}
+}

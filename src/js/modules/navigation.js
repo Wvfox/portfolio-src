@@ -74,7 +74,7 @@ export function navigation() {
 	})
 
 	// Отключение на мобильных телефонах
-	if (window.innerWidth > 768) {
+	if (window.innerWidth > 1100) {
 		// Активная пункт при загрузки/перезагрузки страницы
 		window.addEventListener('load', activeMenuLink)
 
